@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../vending machine.srcs/sources_1/new/FSM.vhd" \
+"../../../../vending machine.srcs/sources_1/new/clock_divider.vhd" \
+"../../../../vending machine.srcs/sources_1/new/counter.vhd" \
+"../../../../vending machine.srcs/sources_1/new/edge_detector.vhd" \
+"../../../../vending machine.srcs/sources_1/new/segment_decoder.vhd" \
+"../../../../vending machine.srcs/sources_1/new/segment_driver.vhd" \
+"../../../../vending machine.srcs/sim_1/new/top_level_tb_indepth.vhd" \
+
+# Do not sort compile order
+nosort

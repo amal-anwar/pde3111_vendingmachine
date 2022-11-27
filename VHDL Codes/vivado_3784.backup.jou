@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov  5 09:35:16 2019
+# Process ID: 3784
+# Current directory: E:/Vend/vending machine extended/vending machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14344 E:\Vend\vending machine extended\vending machine\vending machine.xpr
+# Log file: E:/Vend/vending machine extended/vending machine/vivado.log
+# Journal file: E:/Vend/vending machine extended/vending machine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Vend/vending machine extended/vending machine/vending machine.xpr}
+update_compile_order -fileset sources_1
+open_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Vend/vending machine extended/vending machine/vending machine.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/Vend/vending machine extended/vending machine/vending machine.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

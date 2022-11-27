@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Nov 22 17:11:33 2021
+# Process ID: 19532
+# Current directory: C:/Users/zhiju/Desktop/Sample_Design_VM/Vend/vending machine extended/vending machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7060 C:\Users\zhiju\Desktop\Sample_Design_VM\Vend\vending machine extended\vending machine\vending machine.xpr
+# Log file: C:/Users/zhiju/Desktop/Sample_Design_VM/Vend/vending machine extended/vending machine/vivado.log
+# Journal file: C:/Users/zhiju/Desktop/Sample_Design_VM/Vend/vending machine extended/vending machine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/zhiju/Desktop/Sample_Design_VM/Vend/vending machine extended/vending machine/vending machine.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/zhiju/Desktop/Sample_Design_VM/Vend/vending machine extended/vending machine'
+INFO: [Project 1-313] Project file moved from 'E:/Vend/vending machine extended/vending machine' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'vending machine.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1077.555 ; gain = 407.441
+update_compile_order -fileset sources_1

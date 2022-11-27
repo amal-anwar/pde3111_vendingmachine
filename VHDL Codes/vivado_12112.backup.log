@@ -1,0 +1,166 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Oct 23 15:31:56 2019
+# Process ID: 12112
+# Current directory: F:/vending machine extended/vending machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3036 F:\vending machine extended\vending machine\vending machine.xpr
+# Log file: F:/vending machine extended/vending machine/vivado.log
+# Journal file: F:/vending machine extended/vending machine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/vending machine extended/vending machine/vending machine.xpr}
+INFO: [Project 1-313] Project file moved from 'E:/vending machine extended/vending machine' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-231] Project 'vending machine.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 766.832 ; gain = 79.387
+update_compile_order -fileset sources_1
+save_project_as project_1 C:/Users/mm3139/Desktop/project_1 -force
+save_project_as: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 797.652 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Oct 23 15:35:03 2019] Launched synth_1...
+Run output will be captured here: C:/Users/mm3139/Desktop/project_1/project_1.runs/synth_1/runme.log
+[Wed Oct 23 15:35:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/mm3139/Desktop/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1665.781 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1665.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1749.551 ; gain = 938.684
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B225A
+set_property PROGRAM.FILE {C:/Users/mm3139/Desktop/project_1/project_1.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/mm3139/Desktop/project_1/project_1.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: top_level
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2533.309 ; gain = 116.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/top_level.vhd:21]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/debouncer.vhd:4' bound to instance 'button1_debounce_inst' of component 'debouncer' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/top_level.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/debouncer.vhd:11]
+	Parameter divider bound to: 499999 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'button_clk_inst' of component 'clock_divider' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/debouncer.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/clock_divider.vhd:12]
+	Parameter divider bound to: 499999 - type: integer 
+WARNING: [Synth 8-614] signal 'tmp' is read in the process but is not in the sensitivity list [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/clock_divider.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/clock_divider.vhd:12]
+INFO: [Synth 8-3491] module 'edge_detector' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/edge_detector.vhd:11' bound to instance 'edge_detect' of component 'edge_detector' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/debouncer.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/edge_detector.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (2#1) [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/edge_detector.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (3#1) [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/debouncer.vhd:11]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/debouncer.vhd:4' bound to instance 'button2_debounce_inst' of component 'debouncer' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/top_level.vhd:93]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/debouncer.vhd:4' bound to instance 'button3_debounce_inst' of component 'debouncer' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/top_level.vhd:99]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/debouncer.vhd:4' bound to instance 'button4_debounce_inst' of component 'debouncer' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/top_level.vhd:105]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/FSM.vhd:4' bound to instance 'FSM_inst' of component 'FSM' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/top_level.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/FSM.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (4#1) [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/FSM.vhd:19]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/counter.vhd:6' bound to instance 'counter_inst' of component 'counter' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/top_level.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/counter.vhd:24]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/counter.vhd:63]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/counter.vhd:104]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/counter.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'counter' (5#1) [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/counter.vhd:24]
+INFO: [Synth 8-3491] module 'segment_driver' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/segment_driver.vhd:15' bound to instance 'segment_driver_inst' of component 'segment_driver' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/top_level.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'segment_driver' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/segment_driver.vhd:25]
+INFO: [Synth 8-3491] module 'seven_segment_decoder' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/segment_decoder.vhd:10' bound to instance 'segment_decoder' of component 'seven_segment_decoder' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/segment_driver.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'seven_segment_decoder' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/segment_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment_decoder' (6#1) [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/segment_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'segment_driver' (7#1) [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/segment_driver.vhd:25]
+	Parameter divider bound to: 30000 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'segment_clk_divider_inst' of component 'clock_divider' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/top_level.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized1' [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/clock_divider.vhd:12]
+	Parameter divider bound to: 30000 - type: integer 
+WARNING: [Synth 8-614] signal 'tmp' is read in the process but is not in the sensitivity list [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/clock_divider.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized1' (7#1) [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/clock_divider.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (8#1) [C:/Users/mm3139/Desktop/project_1/project_1.srcs/sources_1/new/top_level.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2576.313 ; gain = 159.422
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2576.313 ; gain = 159.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2576.313 ; gain = 159.422
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mm3139/Desktop/project_1/project_1.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/mm3139/Desktop/project_1/project_1.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2726.605 ; gain = 309.715
+32 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2726.605 ; gain = 309.715
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B225A

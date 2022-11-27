@@ -1,0 +1,222 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Oct 26 15:20:46 2019
+# Process ID: 10172
+# Current directory: G:/vending machine extended/vending machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7900 G:\vending machine extended\vending machine\vending machine.xpr
+# Log file: G:/vending machine extended/vending machine/vivado.log
+# Journal file: G:/vending machine extended/vending machine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {G:/vending machine extended/vending machine/vending machine.xpr}
+INFO: [Project 1-313] Project file moved from 'E:/vending machine extended/vending machine' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 799.070 ; gain = 165.504
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B225A
+set_property PROGRAM.FILE {G:/vending machine extended/vending machine/vending machine.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {G:/vending machine extended/vending machine/vending machine.runs/impl_1/top_level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {G:/vending machine extended/vending machine/vending machine.srcs/sim_1/new/testbecsgdfgdgdfgdfgdd.vhd} w ]
+add_files -fileset sim_1 {{G:/vending machine extended/vending machine/vending machine.srcs/sim_1/new/testbecsgdfgdgdfgdfgdd.vhd}}
+update_compile_order -fileset sim_1
+set_property top testbecsgdfgdgdfgdfgdd [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbecsgdfgdgdfgdfgdd' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbecsgdfgdgdfgdfgdd_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/vending machine extended/vending machine/vending machine.srcs/sim_1/new/testbecsgdfgdgdfgdfgdd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbecsgdfgdgdfgdfgdd'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 55cca04c6a0a40eea1b66cb2bb0cec8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbecsgdfgdgdfgdfgdd_behav xil_defaultlib.testbecsgdfgdgdfgdfgdd -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.testbecsgdfgdgdfgdfgdd
+Built simulation snapshot testbecsgdfgdgdfgdfgdd_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source G:/vending -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "G:/vending" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct 26 15:47:43 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbecsgdfgdgdfgdfgdd_behav -key {Behavioral:sim_1:Functional:testbecsgdfgdgdfgdfgdd} -tclbatch {testbecsgdfgdgdfgdfgdd.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source testbecsgdfgdgdfgdfgdd.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbecsgdfgdgdfgdfgdd_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1879.523 ; gain = 14.934
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbecsgdfgdgdfgdfgdd' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbecsgdfgdgdfgdfgdd_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/vending machine extended/vending machine/vending machine.srcs/sim_1/new/testbecsgdfgdgdfgdfgdd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbecsgdfgdgdfgdfgdd'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 55cca04c6a0a40eea1b66cb2bb0cec8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbecsgdfgdgdfgdfgdd_behav xil_defaultlib.testbecsgdfgdgdfgdfgdd -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.testbecsgdfgdgdfgdfgdd
+Built simulation snapshot testbecsgdfgdgdfgdfgdd_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbecsgdfgdgdfgdfgdd_behav -key {Behavioral:sim_1:Functional:testbecsgdfgdgdfgdfgdd} -tclbatch {testbecsgdfgdgdfgdfgdd.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source testbecsgdfgdgdfgdfgdd.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbecsgdfgdgdfgdfgdd_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbecsgdfgdgdfgdfgdd' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbecsgdfgdgdfgdfgdd_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/vending machine extended/vending machine/vending machine.srcs/sim_1/new/testbecsgdfgdgdfgdfgdd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbecsgdfgdgdfgdfgdd'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 55cca04c6a0a40eea1b66cb2bb0cec8d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbecsgdfgdgdfgdfgdd_behav xil_defaultlib.testbecsgdfgdgdfgdfgdd -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.testbecsgdfgdgdfgdfgdd
+Built simulation snapshot testbecsgdfgdgdfgdfgdd_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/vending machine extended/vending machine/vending machine.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbecsgdfgdgdfgdfgdd_behav -key {Behavioral:sim_1:Functional:testbecsgdfgdgdfgdfgdd} -tclbatch {testbecsgdfgdgdfgdfgdd.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source testbecsgdfgdgdfgdfgdd.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbecsgdfgdgdfgdfgdd_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/vending machine extended/vending machine/vending machine.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Oct 26 16:43:46 2019] Launched synth_1...
+Run output will be captured here: G:/vending machine extended/vending machine/vending machine.runs/synth_1/runme.log
+[Sat Oct 26 16:43:46 2019] Launched impl_1...
+Run output will be captured here: G:/vending machine extended/vending machine/vending machine.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B225A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 26 16:57:03 2019...
